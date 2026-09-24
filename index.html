@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ab3847;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cartao {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 850px;
+            margin: 20px;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            border-radius: 70%;
+            object-fit: cover;
+        }
+
+        .informacoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h1 { color: #df8a7f; font-size: 2rem; }
+        h2 { color: #881534; font-size: 1.2rem; }
+        h3 { color: #ce4343; margin-bottom: 8px; }
+        p, li { color: #7c2121; }
+        
+        ul {
+            margin: 0 0 0 20px;
+        }
+
+        .contatos {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .contatos a {
+            text-decoration: none;
+            color: #D24D74;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contatos a:hover {
+            color: #a63456;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #dc2b54;
+        }
+
+        @media (max-width: 600px) {
+            .cartao {
+                flex-direction: column;
+                text-align: center;
+            }
+            img {
+                width: 130px;
+                height: 130px;
+            }
+            .contatos {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="cartao">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfDptMm7ASSO_9r_YpbH_RNH54GuiEN4CzP3ESWDOg_Mxsl6aCkSPhKIu&s=10" alt="imagem de desenho da moranguinho">
+        <div class="informacoes">
+            <header>
+                <h1>Júlia Gabriela</h1>
+                <h2>Estudante de Programação Web</h2>
+            </header>
+            <section>
+                <h3>Sobre mim</h3>
+                <p>Sou estudante de ensino médio e Programação Web, gosto de desenhar e aprender coisas novas. Tenho interesse em tecnologia e inovação. Estou sempre buscando desenvolver minhas habilidades e crescer profissionalmente.</p>
+            </section>
+            <section>
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Trabalho em equipe</li>
+                    <li>Adaptabilidade</li>
+                    <li>Proatividade</li>
+                    <li>Pensamento crítico</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contato</h3>
+                <div class="contatos">
+                    <a href="https://wa.me/5584987871073" target="_blank">Fale comigo no WhatsApp</a> 
+                    <span>ou</span> 
+                    <a href="mailto:juliagabrielaf2@email.com">Entre em contato por e-mail</a>
+                </div>
+            </section>
+        </div>
+    </main> 
+    <footer>
+        <p>© 2026 - Desenvolvido por Júlia Gabriela</p>
+    </footer>
+</body>
+</html>
